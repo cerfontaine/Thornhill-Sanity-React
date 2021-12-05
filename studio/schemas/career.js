@@ -30,6 +30,12 @@ export default {
             to: {type: 'jobtype'},
         },
         {
+            name: 'serviceprovider',
+            title: 'Service Provider',
+            type: 'reference',
+            to: {type: 'serviceprovider'},
+        },
+        {
             name: 'description',
             title: 'Job Description',
             type: 'array',

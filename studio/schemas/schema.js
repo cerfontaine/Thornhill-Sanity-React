@@ -9,6 +9,9 @@ import blockContent from './blockContent'
 import category from './category'
 import service from './service'
 import serviceprovider from './serviceProvider'
+import career from './career'
+import location from './location'
+import jobtype from './jobtype'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,6 +25,9 @@ export default createSchema({
     service,
     serviceprovider,
     category,
+    career,
+    location,
+    jobtype,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

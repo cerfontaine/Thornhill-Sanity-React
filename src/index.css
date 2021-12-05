@@ -45,6 +45,12 @@ a.nav:hover, .active-link{
   border-bottom:1px solid #e0d046;
   color: #e0d046 !important;
 }
+a.career{
+  border-bottom:1px solid black;
+}
+a.career:hover{
+  color: orange;
+}
 
 /*
         DIV
@@ -120,4 +126,10 @@ th.job-empty{
 }
 td{
   padding: 15px 10px;
+}
+tr{
+  border-bottom:1px solid darkgray;
+}
+tr:nth-of-type(even){
+  background-color: #f2f2f2;
 }
