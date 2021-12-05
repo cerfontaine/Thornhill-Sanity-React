@@ -1,6 +1,6 @@
 @import url('https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css');
 @import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab:wght@700&display=swap');
 
 *{
   font-family: 'Open Sans', sans-serif;
@@ -26,7 +26,7 @@ header{
   text-transform: uppercase;
   background-color: rgba(42, 67, 77, 0.8);
   color: #FFF;
-  border-bottom: 2px solid #e0d046;
+  border-bottom: 2px solid #d04a02;
 }
 nav{
   display:flex;
@@ -38,18 +38,22 @@ nav{
  */
 a.nav{
   color:white;
-  margin-right:0.5em;
+  margin-right:1em;
   font-size:14px;
 }
 a.nav:hover, .active-link{
-  border-bottom:1px solid #e0d046;
-  color: #e0d046 !important;
+  border-bottom:1px solid white;
 }
 a.career{
   border-bottom:1px solid black;
 }
 a.career:hover{
   color: orange;
+}
+a.return-page{
+  background-color: #d04a02;
+  color:white;
+  border:1px solid orange;
 }
 
 /*
@@ -87,13 +91,22 @@ img.home-image{
   background-color: #e8eae9;
 }
 .color-site{
-  color: #e0d046;
+  color: #d04a02;
 }
 .bg-color-site{
-  background-color: rgba(224, 208, 70, 0.8);
+  background-color: rgba(208, 74, 2, 0.8);
+}
+.bg-color-site-1{
+  background-color: rgb(208, 74, 2);
 }
 .border-color-site{
-  border-color: #e0d046;
+  border-color: #d04a02;
+}
+.roboto{
+  font-family: 'Roboto Slab', serif;
+}
+.fff{
+  background-color: #f0f0f0;
 }
 /*
           Tables
@@ -132,4 +145,10 @@ tr{
 }
 tr:nth-of-type(even){
   background-color: #f2f2f2;
+}
+ul{
+  padding-left: 2.5em;
+}
+li{
+  list-style-type: disc !important;
 }

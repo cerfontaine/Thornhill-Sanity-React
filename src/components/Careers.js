@@ -21,7 +21,7 @@ export default function Careers(){
     }, []);
     return (
         <main className="bgd-main min-h-screen p-12">
-            <section className="container mx-auto">
+            <section className="container mx-auto ">
                 <h1 className="text-5xl flex justify-center cursive">
                     Discover your new career with Thornhill
                 </h1>
@@ -42,11 +42,11 @@ export default function Careers(){
                     {careerData &&
                     careerData.map((career, index) => (
                         <tr key={index}>
-                            <td><Link className="career" to={"/career/" + career.slug.current} key={career.slug.current}>{career.name}</Link></td>
+                            <td><Link className="career" to={"/careers/" + career.slug.current} key={career.slug.current}>{career.name}</Link></td>
                             <td>{career.serviceprovider}</td>
                             <td>{career.joblocation}</td>
                             <td>{career.jobtype}</td>
-                            <td><Link className="career" to={"/career/" + career.slug.current} key={career.slug.current}>Learn more</Link></td>
+                            <td><Link className="career" to={"/careers/" + career.slug.current} key={career.slug.current}>Learn more</Link></td>
                         </tr>
                     ))}
                     </tbody>

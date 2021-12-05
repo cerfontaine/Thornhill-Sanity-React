@@ -35,11 +35,10 @@ export default function Services(){
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {serviceData &&
                     serviceData.map((service, index) => (
-                        <article>
-                            <Link to={"/post/" + service.slug.current} key={service.slug.current}>
+                        <article key={index}>
+                            <Link to={"/services/" + service.slug.current} key={service.slug.current}>
                   <span
                       className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-color-site"
-                      key={index}
                   >
                     <img
                         src={service.mainImage.asset.url}
