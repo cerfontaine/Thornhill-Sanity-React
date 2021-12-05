@@ -14,7 +14,7 @@ import logo from './logo.png';
 function App() {
   return(
       <BrowserRouter>
-      <NavBar />
+        <NavBar />
         <Routes>
           <Route element={<Home />} path='/'/>
           <Route element={<About />} path='/about' />
@@ -23,7 +23,7 @@ function App() {
           <Route element={<SingleCareers />} path='/careers/:slug' />
           <Route element={<Careers />} path='/careers' />
           <Route element={<Login />} path='/login' />
-          <Route element={<Profile />} path='/profile' />
+          <Route element={<Profile />} path='/profile/:slug' />
         </Routes>
       </BrowserRouter>
   )
