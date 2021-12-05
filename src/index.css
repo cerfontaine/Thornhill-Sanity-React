@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css');
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration:none;
+}
+/*
+        SEMANTICS
+ */
+header{
+  background-color: black;
+  padding:1em;
+}
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+        LINKS
+ */
+a.nav{
+  color:white;
+  margin-right:0.5em;
+}
+a.nav:hover{
+  border-bottom:1px solid white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+        DIV
+ */
+
+
+/*
+        IMAGES
+ */
+img.logo{
+  width:13em;
+}
+/*
+        CLASSES
+ */
+.cursive {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.container{
+  margin:auto;
+  width:90%;
+}
+.post img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:5px;
+}
+.active-link{
+  border-bottom:1px solid white;
 }
