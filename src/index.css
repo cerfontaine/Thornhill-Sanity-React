@@ -13,8 +13,20 @@
         SEMANTICS
  */
 header{
-  background-color: black;
-  padding:1em;
+  padding:32px 0 32px 0;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  font-family: Barlow,Helvetica,sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  font-feature-settings: 'liga' off;
+  text-transform: uppercase;
+  background-color: rgba(42, 67, 77, 0.8);
+  color: #FFF;
+  border-bottom: 2px solid #e0d046;
 }
 nav{
   display:flex;
@@ -27,9 +39,11 @@ nav{
 a.nav{
   color:white;
   margin-right:0.5em;
+  font-size:14px;
 }
-a.nav:hover{
-  border-bottom:1px solid white;
+a.nav:hover, .active-link{
+  border-bottom:1px solid #e0d046;
+  color: #e0d046 !important;
 }
 
 /*
@@ -41,7 +55,11 @@ a.nav:hover{
         IMAGES
  */
 img.logo{
-  width:13em;
+  width: 185px;
+  height: 40px;
+}
+img.home-image{
+  margin-top:-106px;
 }
 /*
         CLASSES
@@ -59,6 +77,47 @@ img.logo{
   margin-right: auto;
   border-radius:5px;
 }
-.active-link{
-  border-bottom:1px solid white;
+.bgd-main{
+  background-color: #e8eae9;
+}
+.color-site{
+  color: #e0d046;
+}
+.bg-color-site{
+  background-color: rgba(224, 208, 70, 0.8);
+}
+.border-color-site{
+  border-color: #e0d046;
+}
+/*
+          Tables
+ */
+th{
+  padding: 15px 10px;
+  line-height: 24px;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 30px;
+  border-bottom:1px solid black;
+  text-align: left;
+}
+th.job-title{
+  width:30%;
+}
+th.job-line{
+  width:25%;
+}
+th.job-location{
+  width:15%;
+}
+th.job-type{
+  width:20%;
+}
+th.job-empty{
+  width:10%;
+}
+td{
+  padding: 15px 10px;
 }

@@ -1,6 +1,6 @@
 export default {
-  name: 'post',
-  title: 'Post',
+  name: 'service',
+  title: 'Service',
   type: 'document',
   fields: [
     {
@@ -18,10 +18,10 @@ export default {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
+      name: 'serviceprovider',
+      title: 'Service Provider',
       type: 'reference',
-      to: {type: 'author'},
+      to: {type: 'serviceprovider'},
     },
     {
       name: 'mainImage',
@@ -31,20 +31,10 @@ export default {
         hotspot: true,
       },
     },
+
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    },
-    {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    },
-    {
-      name: 'body',
-      title: 'Body',
+      name: 'description',
+      title: 'Description',
       type: 'blockContent',
     },
   ],
@@ -56,9 +46,9 @@ export default {
       media: 'mainImage',
     },
     prepare(selection) {
-      const {author} = selection
+      const {serviceprovider} = selection
       return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
+        subtitle: serviceprovider && `by ${serviceprovider}`,
       })
     },
   },
