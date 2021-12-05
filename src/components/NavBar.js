@@ -4,7 +4,7 @@ import logo from '../logo-all.png';
 
 export default function NavBar(){
     return (
-        <header>
+        <header className="header-site">
             <div className="container">
                 <nav className="">
                     <NavLink to="/">

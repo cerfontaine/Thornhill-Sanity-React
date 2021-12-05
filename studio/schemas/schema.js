@@ -6,12 +6,12 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
 import blockContent from './blockContent'
-import category from './category'
 import service from './service'
 import serviceprovider from './serviceProvider'
 import career from './career'
 import location from './location'
 import jobtype from './jobtype'
+import about from './about'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,10 +24,10 @@ export default createSchema({
     // in the studio.
     service,
     serviceprovider,
-    category,
     career,
     location,
     jobtype,
+    about,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
