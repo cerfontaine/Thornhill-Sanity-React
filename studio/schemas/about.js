@@ -22,10 +22,5 @@ export default {
             title: 'Post',
             type: 'blockContent',
         },
-        {
-            title: 'Is the post, the main post ? [WARNING] Only one',
-            name: 'mainpost',
-            type: 'boolean',
-        }
     ],
 }

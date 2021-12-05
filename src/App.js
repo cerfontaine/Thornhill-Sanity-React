@@ -8,7 +8,6 @@ import Services from "./components/Services";
 import SingleCareers from "./components/SingleCareers";
 import SingleServices from "./components/SingleServices";
 import NavBar from "./components/NavBar";
-import logo from './logo.png';
 
 
 function App() {

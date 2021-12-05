@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
-import BlockContent from "@sanity/block-content-to-react";
 import image from "../cam.jpg"
 
 export default function About(){
+    const [setAbout] = useState(null);
+
+    useEffect(() => {
+        sanityClient
+            .fetch(
+                `*[_type == "about"]{
+                post,
+                slug,
+            }`
+            )
+            .then((data) => setAbout(data))
+            .catch(console.error);
+    }, []);
     return (
         <main className="bg-gray-200 min-h-screen p-12">
             <article className="container shadow-lg mx-auto bgd-main rounded-lg">
@@ -16,9 +27,9 @@ export default function About(){
                             </h1>
                             <div className="flex justify-center text-gray-800">
                                 <p className="cursive flex items-center pl-2">
-                                    At PwC, we’re committed to providing quality audit, tax and consulting services to our public and private clients in Belgium and internationally.
+                                    Thornhill Utilities is a privately held company specializing in public power infrastructure.
 
-                                    Our value promise starts with our relationship with you. We aim to start building value from day one.
+                                    They are responsible for the maintenance of power lines and the installation of public routers for the state of New York in the United States.
                                 </p>
                             </div>
                         </div>
@@ -32,12 +43,18 @@ export default function About(){
                 </header>
                 <div className="flex py-10 items-start">
                     <div className="px-4 prose lg:prose-xl max-w-full">
-                        {/*<BlockContent
-                            blocks={singleServices.description}
-                            projectId="r3u99q74"
-                            dataset="production"
-                        />*/}
-                        Test test test test
+                        <h2>Empowering Consumers</h2>
+
+
+
+                        Insight for Tomorrow. Connected Living Today
+
+
+                        Direct Energy is subsidiary of Thornhill Utilities and gives customers choice, simplicity, and innovation where energy, data, and technology meet.
+
+
+                        We make energy work harder for our over four million home and business customers across North America.
+
                     </div>
                 </div>
             </article>

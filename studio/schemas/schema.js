@@ -12,7 +12,7 @@ import career from './career'
 import location from './location'
 import jobtype from './jobtype'
 import about from './about'
-
+import user from './user'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -28,6 +28,7 @@ export default createSchema({
     location,
     jobtype,
     about,
+    user,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

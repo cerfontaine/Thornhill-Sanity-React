@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {useFormik, Formik, Form, Field, ErrorMessage} from "formik";
+import {Formik, Form, Field, ErrorMessage} from "formik";
 import {Navigate} from "react-router-dom";
 
 export default function Login() {
@@ -9,16 +9,14 @@ export default function Login() {
             <div className="loginDiv fff flex items-center flex-col p-5 font-bold">
                 <h1>Token-Login</h1>
                 <Formik initialValues={{token: ''}}
-                        validate={values => {
-                        }}
-                        onSubmit={(values, {setSubmitting}) => {
+                        onSubmit={(values) => {
                             // axios.post("/login", {token}).then()
                             setloginstate(()=>{return{loggedin:true, token:values.token}}
                             )
                         }}>
                     {({isSubmitting}) => (
-                        <Form>
-                            <Field type="text" name="token"/>
+                        <Form className="flex flex-col">
+                            <Field type="text" className="my-12" name="token" placeholder="Copy-paste Token"/>
                             <ErrorMessage name="token" component="div"/>
                             <button type="submit" disabled={isSubmitting}>
                                 Submit

@@ -51,7 +51,7 @@ export default function SingleCareers(){
                             />
                         </div>
                         <div className=" px-2 py-5">
-                            <span className="py-5 font-bold">Job requirement</span>
+                            <span className="py-5 font-bold">Job requirements</span>
                             <BlockContent
                                 blocks={singleCareers.requirements}
                                 projectId="r3u99q74"
@@ -68,9 +68,9 @@ export default function SingleCareers(){
                         </div>
                     </article>
                     <aside className="w-1/4 border-t-4 border-color-site fff flex flex-col">
-                        <span className="px-2 py-5"><b>Location :</b>{singleCareers.joblocation}</span>
-                        <span className="px-2 py-5"><b>Job type :</b>{singleCareers.jobtype}</span>
-                        <span className="px-2 py-5"><b>Service provider :</b>{singleCareers.serviceprovider}</span>
+                        <span className="px-2 py-5"><b>Location: </b>{singleCareers.joblocation}</span>
+                        <span className="px-2 py-5"><b>Job type: </b>{singleCareers.jobtype}</span>
+                        <span className="px-2 py-5"><b>Service provider: </b>{singleCareers.serviceprovider}</span>
                     </aside>
                 </div>
             </section>

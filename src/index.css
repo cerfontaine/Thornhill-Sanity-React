@@ -34,6 +34,13 @@ nav{
   align-items: center;
 }
 /*
+        H1
+ */
+h1.h1-home-page{
+  background-color: rgba(42, 67, 77, 0.8);
+}
+
+/*
         LINKS
  */
 a.nav{
